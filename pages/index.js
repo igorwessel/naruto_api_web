@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import styles from '../styles/home.module.scss';
 
 export default function Home() {
   return (
@@ -8,7 +8,23 @@ export default function Home() {
         <title>NarutoAPI</title>
       </Head>
 
-      <main className={styles.main}></main>
+      <main className={styles.main}>
+        <img src="/naruto_api_logo.png" alt="NarutoAPI" />
+        <nav>
+          <ul className={styles.navbar}>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Docs</a>
+            </li>
+          </ul>
+        </nav>
+        <div></div>
+      </main>
 
       <footer className={styles.footer}>
         <a
